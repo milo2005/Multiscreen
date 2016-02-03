@@ -1,0 +1,17 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.estacionvl_tc_014.multiscreen.fragments.DetailFragment">
+
+    <TextView
+        style="@style/Base.TextAppearance.AppCompat.Display2"
+        android:id="@+id/txt_color"
+        android:textColor="#ffffff"
+        android:background="#33b5e5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        />
+
+</FrameLayout>
