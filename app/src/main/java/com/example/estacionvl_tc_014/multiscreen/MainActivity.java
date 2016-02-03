@@ -12,6 +12,8 @@ public class MainActivity extends AppCompatActivity {
     MasterFragment master;
     DetailFragment detail;
 
+    boolean phone, land;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,7 +22,15 @@ public class MainActivity extends AppCompatActivity {
         master = new MasterFragment();
         detail = new DetailFragment();
 
+        phone = getResources().getBoolean(R.bool.phone);
+        land = getResources().getBoolean(R.bool.land);
+
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+        ft.replace(R.id.container1, master);
+
+        if(!phone && land)
+            ft.replace(R.id.container2, detail);
+
         ft.commit();
 
     }
