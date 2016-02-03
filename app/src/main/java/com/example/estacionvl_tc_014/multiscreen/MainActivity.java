@@ -1,5 +1,6 @@
 package com.example.estacionvl_tc_014.multiscreen;
 
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -18,6 +19,9 @@ public class MainActivity extends AppCompatActivity {
 
         master = new MasterFragment();
         detail = new DetailFragment();
+
+        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+        ft.commit();
 
     }
 }
