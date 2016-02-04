@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
         phone = getResources().getBoolean(R.bool.phone);
         land = getResources().getBoolean(R.bool.land);
 
+
+
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         ft.replace(R.id.container1, master);
 
